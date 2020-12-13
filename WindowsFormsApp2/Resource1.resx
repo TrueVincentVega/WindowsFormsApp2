@@ -139,6 +139,9 @@
   <data name="Duck2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Duck2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="duck_21863" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\duck_21863.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Handler" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\circle3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -156,5 +159,8 @@
   </data>
   <data name="Target" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\circle1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="video_game_play_space_invadors_108532" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\video-game-play-space-invadors_108532.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

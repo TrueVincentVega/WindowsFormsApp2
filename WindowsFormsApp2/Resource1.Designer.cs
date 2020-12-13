@@ -111,6 +111,16 @@ namespace WindowsFormsApp2 {
         }
         
         /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Icon, аналогичного (Значок).
+        /// </summary>
+        internal static System.Drawing.Icon duck_21863 {
+            get {
+                object obj = ResourceManager.GetObject("duck_21863", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap Duck1 {
@@ -187,6 +197,16 @@ namespace WindowsFormsApp2 {
             get {
                 object obj = ResourceManager.GetObject("Target", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Icon, аналогичного (Значок).
+        /// </summary>
+        internal static System.Drawing.Icon video_game_play_space_invadors_108532 {
+            get {
+                object obj = ResourceManager.GetObject("video_game_play_space_invadors_108532", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
             }
         }
     }

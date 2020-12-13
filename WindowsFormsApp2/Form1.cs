@@ -66,6 +66,13 @@ namespace WindowsFormsApp2
                 AddScore(1);
             }
 
+           // Кінець гри при досяганні 15 пострілів
+           if (_score >= 15)
+            {
+                dog_pictureBox.Visible = true;
+                gameover_label.Visible = true;
+                _duckPosition = Point.Empty;
+            }
             graphics.DrawImage(aimTexture, aimRect); 
             graphics.DrawImage(duck1Texture, duckRect); 
         }
@@ -89,11 +96,14 @@ namespace WindowsFormsApp2
             score_label.Text = _score.ToString();
         }
 
+        // NEW GAME BUTTON
         private void button1_Click(object sender, EventArgs e)
         {
             _score = 0;
             score_label.Text = _score.ToString();
             _duckPosition = new Point(300, 300);
+            dog_pictureBox.Visible = false;
+            gameover_label.Visible = false;
         }
     }
 }

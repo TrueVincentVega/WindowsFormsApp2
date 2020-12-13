@@ -35,6 +35,9 @@ namespace WindowsFormsApp2
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.score_label = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.dog_pictureBox = new System.Windows.Forms.PictureBox();
+            this.gameover_label = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dog_pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // timer1
@@ -63,24 +66,51 @@ namespace WindowsFormsApp2
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Olive;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.OliveDrab;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Image = global::WindowsFormsApp2.Resource1.button;
-            this.button1.Location = new System.Drawing.Point(70, 517);
+            this.button1.Location = new System.Drawing.Point(71, 528);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(90, 71);
+            this.button1.Size = new System.Drawing.Size(88, 57);
             this.button1.TabIndex = 1;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // dog_pictureBox
+            // 
+            this.dog_pictureBox.Image = global::WindowsFormsApp2.Resource1.Dog;
+            this.dog_pictureBox.Location = new System.Drawing.Point(351, 297);
+            this.dog_pictureBox.Name = "dog_pictureBox";
+            this.dog_pictureBox.Size = new System.Drawing.Size(87, 125);
+            this.dog_pictureBox.TabIndex = 2;
+            this.dog_pictureBox.TabStop = false;
+            this.dog_pictureBox.Visible = false;
+            // 
+            // gameover_label
+            // 
+            this.gameover_label.AutoSize = true;
+            this.gameover_label.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(165)))), ((int)(((byte)(254)))));
+            this.gameover_label.Font = new System.Drawing.Font("OCR A Extended", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gameover_label.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.gameover_label.Location = new System.Drawing.Point(221, 158);
+            this.gameover_label.Name = "gameover_label";
+            this.gameover_label.Size = new System.Drawing.Size(388, 66);
+            this.gameover_label.TabIndex = 3;
+            this.gameover_label.Text = "GAME OVER";
+            this.gameover_label.Visible = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::WindowsFormsApp2.Resource1.Background1;
-            this.ClientSize = new System.Drawing.Size(788, 600);
+            this.ClientSize = new System.Drawing.Size(793, 602);
+            this.Controls.Add(this.gameover_label);
+            this.Controls.Add(this.dog_pictureBox);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.score_label);
+            this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Showcard Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -90,6 +120,7 @@ namespace WindowsFormsApp2
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Duck Hunt";
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
+            ((System.ComponentModel.ISupportInitialize)(this.dog_pictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -101,6 +132,8 @@ namespace WindowsFormsApp2
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.Label score_label;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox dog_pictureBox;
+        private System.Windows.Forms.Label gameover_label;
     }
 }
 

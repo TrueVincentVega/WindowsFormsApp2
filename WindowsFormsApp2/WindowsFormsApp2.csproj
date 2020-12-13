@@ -157,5 +157,14 @@
   <ItemGroup>
     <None Include="Resources\Duck2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\duck_21863.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\video-game-play-space-invadors_108532.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Duck_33891.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
