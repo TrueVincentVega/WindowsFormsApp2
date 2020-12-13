@@ -34,7 +34,7 @@ namespace WindowsFormsApp2
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.score_label = new System.Windows.Forms.Label();
-            this.scoreinfo_label = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // timer1
@@ -51,37 +51,43 @@ namespace WindowsFormsApp2
             // score_label
             // 
             this.score_label.AutoSize = true;
-            this.score_label.BackColor = System.Drawing.SystemColors.Window;
-            this.score_label.Font = new System.Drawing.Font("Snap ITC", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.score_label.Location = new System.Drawing.Point(838, 9);
+            this.score_label.BackColor = System.Drawing.SystemColors.InfoText;
+            this.score_label.Font = new System.Drawing.Font("OCR A Extended", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.score_label.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.score_label.Location = new System.Drawing.Point(659, 531);
             this.score_label.Name = "score_label";
-            this.score_label.Size = new System.Drawing.Size(30, 27);
+            this.score_label.Size = new System.Drawing.Size(27, 25);
             this.score_label.TabIndex = 0;
             this.score_label.Text = "0";
             // 
-            // scoreinfo_label
+            // button1
             // 
-            this.scoreinfo_label.AutoSize = true;
-            this.scoreinfo_label.BackColor = System.Drawing.SystemColors.Info;
-            this.scoreinfo_label.Font = new System.Drawing.Font("Snap ITC", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.scoreinfo_label.Location = new System.Drawing.Point(745, 9);
-            this.scoreinfo_label.Name = "scoreinfo_label";
-            this.scoreinfo_label.Size = new System.Drawing.Size(87, 27);
-            this.scoreinfo_label.TabIndex = 1;
-            this.scoreinfo_label.Text = "Score:";
+            this.button1.BackColor = System.Drawing.Color.Olive;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Image = global::WindowsFormsApp2.Resource1.button;
+            this.button1.Location = new System.Drawing.Point(70, 517);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(90, 71);
+            this.button1.TabIndex = 1;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(894, 592);
-            this.Controls.Add(this.scoreinfo_label);
+            this.BackgroundImage = global::WindowsFormsApp2.Resource1.Background1;
+            this.ClientSize = new System.Drawing.Size(788, 600);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.score_label);
             this.Font = new System.Drawing.Font("Showcard Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Duck Hunt";
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
             this.ResumeLayout(false);
@@ -94,7 +100,7 @@ namespace WindowsFormsApp2
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.Label score_label;
-        private System.Windows.Forms.Label scoreinfo_label;
+        private System.Windows.Forms.Button button1;
     }
 }
 
